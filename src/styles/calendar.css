@@ -1,0 +1,61 @@
+.react-calendar {
+    width: 100%;
+    background-color: #edf2f7; /* Fondo del calendario */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    color: #000000; /* Texto negro por defecto */
+  }
+  
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    font-weight: bold;
+    color: #000000; /* Días de la semana en negro */
+  }
+  
+  .react-calendar__tile {
+    position: relative;
+    padding: 10px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #e2e8f0; /* Hover */
+    color: #000000; /* Texto negro */
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #63b3ed; /* Fondo activo */
+    color: #000000; /* Texto negro */
+  }
+  
+  .react-calendar__tile--now {
+    background-color: #cbd5e0; /* Fondo de la fecha actual */
+    color: #000000; /* Texto negro */
+  }
+  
+  .react-calendar__tile--hasActive {
+    background-color: #3182ce; /* Fondo de las fechas con tareas */
+    color: #000000; /* Texto negro */
+  }
+  
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #000000; /* Navegación en negro */
+  }
+  
+  .react-calendar__navigation__label,
+  .react-calendar__navigation__arrow {
+    color: #000000; /* Flechas y títulos */
+  }
+  
+  .react-calendar__tile--active:hover {
+    background-color: #3182ce;
+    color: #000000;
+  }
+  
