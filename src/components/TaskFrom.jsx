@@ -29,7 +29,7 @@ const TaskForm = () => {
   }
 
   return (
-    <Box bg="gray.100" p={4} borderRadius="md" boxShadow="sm">
+    <Box bg="black" p={4} borderRadius="md" boxShadow="sm">
       <VStack as="form" spacing={4} onSubmit={handleSubmit}>
         <Input 
           placeholder="Título" 

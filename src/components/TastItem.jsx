@@ -12,7 +12,16 @@ const TaskItem = ({ task }) => {
   }
 
   return (
-    <Box bg="gray.100" p={4} borderRadius="md" w="100%" boxShadow="sm">
+    <Box bg="gray.100" 
+      p={4} 
+      borderRadius="md" 
+      w="100%" 
+      boxShadow="sm"
+      minHeight="100px"  // Altura mínima
+      maxHeight="300px"  // Altura máxima
+      overflowY="auto"   // Scroll vertical si el contenido supera la altura
+      wordBreak="break-word"  // Permite el ajuste del texto largo
+    >
       {isEditing ? (
         <EditTask task={task} onClose={() => setIsEditing(false)} />
       ) : (
