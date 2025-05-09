@@ -6,13 +6,18 @@ import TaskItem from './TastItem'
 const TaskList = () => {
   const { state } = useContext(TaskContext)
 
+ 
+  const filteredTasks = state.filter === 'all'
+    ? state.tasks
+    : state.tasks.filter(task => task.status === state.filter)
+
   return (
     <Box p={4}>
       <VStack spacing={3}>
-        {state.tasks.length === 0 ? (
-          <Text color="#000000">No hay tareas aún</Text>
+        {filteredTasks.length === 0 ? (
+          <Text color="#000000">No hay tareas en esta categoría</Text>
         ) : (
-          state.tasks.map(task => (
+          filteredTasks.map(task => (
             <TaskItem key={task.id} task={task} />
           ))
         )}
@@ -22,6 +27,7 @@ const TaskList = () => {
 }
 
 export default TaskList
+
 
 
 
